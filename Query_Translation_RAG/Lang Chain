@@ -1,0 +1,26 @@
+Building the RAG is 2 forms:
+
+1. From the vector Database we get 2 outputs
+1. Embedding
+2. BM25 (Keyword search)
+Note: 'FAISS' doesn't allow BM25 whereas MongoDB Atlas allows BM25 algorithm
+
+2. Query Translation/ Query Decomposition: 
+
+Multiple Queries are taken by LLM (E.g: who is president? who is current president? who is current president now? )and then duplicates are removed. Finally it collects unique queries and gives to LLM
+
+We will send the data as small chunks and we store it in Vector DB
+
+It is Cost effective as it uses LLM
+
+Multiple Docs ----> Chunks----> Embedding Model--->stores in Vector DB
+
+
+
+
+
+
+
+
+
+
